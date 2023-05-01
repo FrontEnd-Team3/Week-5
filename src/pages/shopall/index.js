@@ -1,5 +1,5 @@
+import { GridSection } from "../../styles/common";
 import Item from "./components/item/item";
-import ShopSection from "./components/shop-section/style";
 
 const ShopAll = () => {
   const items = [
@@ -49,11 +49,11 @@ const ShopAll = () => {
     },
   ];
   return (
-    <ShopSection>
+    <GridSection>
       {items.map((item, i) => (
-        <Item {...item} key={i + 1} />
+        <Item {...{ ...item, key: i + 1, num: i + 1 }} />
       ))}
-    </ShopSection>
+    </GridSection>
   );
 };
 

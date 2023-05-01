@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "../components/layout";
+import Detail from "../pages/detail";
 import ShopAll from "../pages/shopall";
 const router = createBrowserRouter([
   {
@@ -10,7 +11,8 @@ const router = createBrowserRouter([
         element: <ShopAll />,
       },
       {
-        path: "/items/:itemId",
+        path: "/:todoId",
+        element: <Detail />,
       },
     ],
   },

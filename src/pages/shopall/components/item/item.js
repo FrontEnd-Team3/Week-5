@@ -1,4 +1,5 @@
 import MainSector from "./style";
+import { Link } from "react-router-dom";
 
 const Item = ({
   imgSrc,
@@ -10,23 +11,15 @@ const Item = ({
   price,
   ingredient,
   desc,
+  num,
 }) => {
-  console.log(
-    imgSrc,
-    alt,
-    title,
-    type,
-    volume,
-    weight,
-    price,
-    ingredient,
-    desc
-  );
   return (
     <MainSector>
-      <img src={imgSrc} alt={alt} />
+      <Link to={`/${num}`}>
+        <img src={imgSrc} alt={alt} />
+      </Link>
       <h3 className="text-center">
-        <a href="./detail.html">
+        <a href="#">
           <span>{title}</span> <br />
           <span>{type}</span>
         </a>
