@@ -1,0 +1,35 @@
+.img {
+  width: 350px;
+  float: left;
+  padding-right: 30px;
+}
+.position {
+  width: 700px;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+.font {
+  margin-top: 40px;
+  line-height: 25px;
+}
+.button {
+  background-color: #555555;
+  padding: 15px 32px;
+  border: none;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.span {
+  margin-left: 10px;
+}
+h4 {
+  font-family: "Playfair Display", serif;
+  margin: 0;
+  font-weight: 100;
+  text-align: center;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
