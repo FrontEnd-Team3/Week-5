@@ -1,0 +1,138 @@
+1. React의 장점
+    1. CSR, SPA에 최적화되어 부드럽게 동작하는 html 만들기가 가능하다
+    2. 컴포넌트 기반 아키텍처를 사용하여 각 부분을 분리하여 개발하기 때문에 재사용이 용이하고 유지 보수에 효율적이다
+        
+        ```
+        import React, { Component } from 'react';
+        
+        class App extends Component {
+          render() {
+            return (
+              <div>
+                <Header />
+                <Content />
+              </div>
+            );
+          }
+        }
+        
+        class Header extends Component {
+          render() {
+            return (
+              <div>
+                <h1>Header</h1>
+              </div>
+            );
+          }
+        }
+        
+        class Content extends Component {
+          render() {
+            return (
+              <div>
+                <p>Content</p>
+              </div>
+            );
+          }
+        }
+        
+        export default App;
+        ```
+        
+        위의 예시 코드에서 **`Header`**와 **`Content`**는 각각 독립된 컴포넌트로 구성되어 있으며, **`App`** 컴포넌트에서 이들을 조합하여 웹 페이지를 구성하고 있다. 이렇게 컴포넌트를 분리하면, 개발 및 유지보수가 쉬워지며, 컴포넌트를 재사용할 수 있어 코드의 중복을 방지할 수 있다.
+        
+    3. React는 JSX라는 문법을 사용하여 자바스크립트와 HTML을 혼합하여 작성할 수 있. 이를 통해 UI를 만들기 위한 코드를 간단하고 직관적으로 작성할 수 있다
+        
+        ```
+        jsxCopy code
+        import React from 'react';
+        
+        class MyComponent extends React.Component {
+          render() {
+            return (
+              <div>
+                <h1>Hello, {this.props.name}!</h1>
+                <p>This is a React component.</p>
+              </div>
+            );
+          }
+        }
+        
+        export default MyComponent;
+        ```
+        
+        위의 예시처럼 JSX를 사용하여 HTML과 JavaScript를 혼합하여 작성할 수 있다.
+        
+    4. Virtual DOM을 사용하여 DOM 요소를 직접 조작하지 않고도 UI를 업데이트할 수 있다.
+    
+        ```
+        // 초기 DOM
+        <div id="app">
+        <h1>Hello, World!</h1>
+        <p>This is a paragraph.</p>
+        </div>
+        
+        // React 요소
+        const element = (
+        <div>
+            <h1>Hello, World!</h1>
+            <p>This is a paragraph.</p>
+        </div>
+        );
+        
+        // 가상돔
+        const virtualDOM = {
+        type: 'div',
+        props: {
+            children: [
+            {
+                type: 'h1',
+                props: {
+                children: 'Hello, World!'
+                }
+            },
+            {
+                type: 'p',
+                props: {
+                children: 'This is a paragraph.'
+                }
+            }
+            ]
+        }
+        };
+        
+        // 변경된 React 요소
+        const updatedElement = (
+        <div>
+            <h1>Hello, React!</h1>
+            <p>This is a new paragraph.</p>
+        </div>
+        );
+        
+        // 변경된 가상돔
+        const updatedVirtualDOM = {
+        type: 'div',
+        props: {
+            children: [
+            {
+                type: 'h1',
+                props: {
+                children: 'Hello, React!'
+                }
+            },
+            {
+                type: 'p',
+                props: {
+                children: 'This is a new paragraph.'
+                }
+            }
+            ]
+        }
+        };
+        ```
+    
+2. React의 단점
+    1. React는 다른 라이브러리와 함께 사용할 때 복잡성이 증가할 수 있다. 예를 들어, React에서 Redux를 사용하는 경우, 상태 관리가 복잡해질 수 있다.
+    2. React는 성능이 뛰어난 편이지만, React 앱의 크기가 커질수록 초기 로드 시간이 늘어날 수 있다.
+
+    
