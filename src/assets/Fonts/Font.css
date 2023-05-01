@@ -1,0 +1,58 @@
+/* Noto Sans Korean */
+@font-face {
+  font-family: "Notosanskr";
+  font-weight: 100;
+  src: url("./NotoSansKr/NotoSansKR-Thin.otf") format("opentype");
+}
+@font-face {
+  font-family: "Notosanskr";
+  font-weight: 300;
+  src: url("./NotoSansKr/NotoSansKR-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Notosanskr";
+  font-weight: 400;
+  src: url("./NotoSansKr/NotoSansKR-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Notosanskr";
+  font-weight: 500;
+  src: url("./NotoSansKr/NotoSansKR-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "Notosanskr";
+  font-weight: 700;
+  src: url("./NotoSansKr/NotoSansKR-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Notosanskr";
+  font-weight: 900;
+  src: url("./NotoSansKr/NotoSansKR-Black.otf") format("opentype");
+}
+
+/* Lato */
+@font-face {
+  font-family: "Lato";
+  font-weight: 100;
+  src: url("./Lato/Lato-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lato";
+  font-weight: 300;
+  src: url("./Lato/Lato-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lato";
+  font-weight: 400;
+  src: url("./Lato/Lato-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lato";
+  font-weight: 700;
+  src: url("./Lato/Lato-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lato";
+  font-weight: 800;
+  src: url("./Lato/Lato-Black.ttf") format("truetype");
+}

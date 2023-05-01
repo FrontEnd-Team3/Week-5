@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", "Notosanskr", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* Noto Sans Korean */
+@font-face {
+  font-family: "Notosanskr";
+  font-weight: 100;
+  src: local("Notosanskr") url("./assets/Fonts/NotoSansKr/NotoSansKR-Thin.otf");
+}
+@font-face {
+  font-family: "Notosanskr";
+  font-weight: 300;
+  src: local("Notosanskr") url("./assets/Fonts/NotoSansKr/NotoSansKR-Light.otf");
+}
+@font-face {
+  font-family: "Notosanskr";
+  font-weight: 400;
+  src: local("Notosanskr") url("./assets/Fonts/NotoSansKr/NotoSansKR-Regular.otf");
+}
+@font-face {
+  font-family: "Notosanskr";
+  font-weight: 500;
+  src: local("Notosanskr") url("./assets/Fonts/NotoSansKr/NotoSansKR-Medium.otf");
+}
+@font-face {
+  font-family: "Notosanskr";
+  font-weight: 700;
+  src: local("Notosanskr") url("./assets/Fonts/NotoSansKr/NotoSansKR-Bold.otf");
+}
+@font-face {
+  font-family: "Notosanskr";
+  font-weight: 900;
+  src: local("Notosanskr") url("./assets/Fonts/NotoSansKr/NotoSansKR-Black.otf");
+}
+
+/* Montserrat */
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  src: local("Montserrat") url("./assets/Fonts/Montserrat/Montserrat-Regular.woff") format("eot"), url("./assets/Fonts/Montserrat/Montserrat-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 500;
+  src: local("Montserrat") url("./assets/Fonts/Montserrat/Montserrat-SemiBold.woff") format("eot"), url("./assets/Fonts/Montserrat/Montserrat-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 700;
+  src: local("Montserrat") url("./assets/Fonts/Montserrat/Montserrat-Bold.woff") format("eot"), url("./assets/Fonts/Montserrat/Montserrat-Bold.woff") format("woff");
+}
+:root {
+  --font-montserrat: "Montserrat";
+  --font-notosanskr: "Notosanskr";
+}
